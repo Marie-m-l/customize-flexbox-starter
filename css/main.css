@@ -16,10 +16,6 @@ html {
     line-height: 1.4;
 }
 
-img {
-    max-height: 100%;
-    max-width: 100%;
-}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -102,7 +98,7 @@ textarea {
 /*Large Background Image*/
 html {
   background: url(../img/background-img-south-dakota.jpg) no-repeat center center fixed;
-  height: 100%;
+  background-size: cover;
    
 }
 
@@ -221,8 +217,20 @@ body {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+/*** BREAKPOINTS FOR TABLETS AND DESKTOPS ***/
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    html {
+        background: url(../img/background-img-south-dakota.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    html {
+        background: url(../img/background-img-south-dakota.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
 }
 
 @media print,
